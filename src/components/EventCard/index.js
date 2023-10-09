@@ -12,7 +12,7 @@ const EventCard = ({
   small = false,
   ...props
 }) => (
-    <div
+  <div 
       data-testid="card-testid"
       className={`EventCard${small ? " EventCard--small" : ""}`}
       {...props}
@@ -25,8 +25,8 @@ const EventCard = ({
         <div className="EventCard__title">{title}</div>
         <div className="EventCard__month">{getMonth(date)}</div>
       </div>
-    </div>
-  );
+  </div>
+);
 
 EventCard.propTypes = {
   imageSrc: PropTypes.string.isRequired,

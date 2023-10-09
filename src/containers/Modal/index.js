@@ -26,7 +26,7 @@ const Modal = ({ opened, Content, children }) => {
   );
 };
 
-Modal.defaultProps = {
+Modal.defaultProps = { 
   opened: false,
 }
 
