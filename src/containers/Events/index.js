@@ -42,10 +42,10 @@ const EventList = () => {
             onChange={(value) => (value ? changeType(value) : changeType(null))}
           />
           <div id="events" className="ListContainer">
-              {filteredEvents.map((event) => ( 
+              {filteredEvents.map((event) => (
               <Modal key={event.id} Content={<ModalEvent event={event} />}>
                 {( {setIsOpened} ) => ( 
-                   <EventCard
+                    <EventCard
                     onClick={() => setIsOpened(true)}
                     imageSrc={event.cover} 
                     title={event.title}
@@ -53,7 +53,7 @@ const EventList = () => {
                     label={event.type}
                    />
                 )}
-              </Modal>
+                </Modal>
             ))}
             </div>
           <div className="Pagination">
